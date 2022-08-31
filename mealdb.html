@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Db api</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-9/12 mx-auto">
+    <header class="m-12">
+      <h1 class="text-5xl text-center text-rose-500 font-semibold">
+        Exploring food
+      </h1>
+    </header>
+    <main>
+      <section class="mt-12">
+        <input
+          id="searche-field"
+          class="p-4 border-solid border-2 border-sky-500"
+          type="text"
+          placeholder="search your food "
+        />
+        <button
+          onclick="searchFood()"
+          class="bg-black text-white px-4 py-3 rounded focus:outline-none focus:ring focus:ring-violet-300"
+        >
+          Search
+        </button>
+      </section>
+
+      <section class="mt-12">
+        <h1 class="text-2xl">selected Meal</h1>
+        <div id="meal-details"></div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-3xl">My Meals</h2>
+        <div id="meal-container" class="mt-12 grid grid-cols-3 gap-4"></div>
+      </section>
+    </main>
+
+    <script src="js/mealdb.js"></script>
+  </body>
+</html>
